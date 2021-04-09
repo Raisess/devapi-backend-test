@@ -28,6 +28,15 @@ export class ConnectorsService {
 		throw new Error("Can't find, connector doesn't exists!");
 	}
 
+	public async update(id: string, newData: IConnector): Promise<void> {
+		const connector: IConnector = await this.findOne(id);
+
+		await connector.updateOne({
+			updatedAt: new Date().toLocaleString(),
+			name:      newData.name || connector.name
+		});
+	}
+
 	public async remove(id: string): Promise<void> {
 		const connector: IConnector = await this.findOne(id);
 

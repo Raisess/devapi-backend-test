@@ -1,4 +1,4 @@
-import { Controller, Post, Body, Get, Param, Delete } from "@nestjs/common";
+import { Controller, Post, Body, Get, Param, Delete, Put } from "@nestjs/common";
 
 import { IConnector } from "./interfaces/connectors.interface";
 import { ConnectorsService } from "./connectors.service";
@@ -24,6 +24,15 @@ export class ConnectorsController {
   @Get(":id")
   public async findOne(@Param() { id }: { id: string }): Promise<IConnector> {
     return await this.connectorsService.findOne(id);
+  }
+
+  @Put(":id")
+  public async update(@Param() { id }: { id: string }, @Body() connector: IConnector): Promise<string> {
+    await this.connectorsService.update(id, connector);
+
+    return JSON.stringify({
+      log: "updated connector"
+    });
   }
 
   @Delete(":id")
