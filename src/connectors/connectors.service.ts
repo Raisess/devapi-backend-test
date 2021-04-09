@@ -29,17 +29,9 @@ export class ConnectorsService {
 	}
 
 	public async remove(id: string): Promise<void> {
-		const connectors: Array<IConnector> = await Connector.find();
+		const connector: IConnector = await this.findOne(id);
 
-		for (const connector of connectors) {
-			if (connector.id === id) {
-				connector.remove();
-
-				return;
-			}
-		}
-
-		throw new Error("Can't remove, connector doesn't exists!");
+		await connector.remove();
 	}
 }
 
