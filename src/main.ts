@@ -1,3 +1,6 @@
+import "dotenv/config";
+import "./database/connect";
+
 import { NestFactory, NestApplication } from "@nestjs/core";
 
 import AppModule from "./app.module";
