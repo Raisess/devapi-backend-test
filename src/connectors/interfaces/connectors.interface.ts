@@ -1,4 +1,6 @@
-export interface IConnector {
+import { Document } from "mongoose";
+
+export interface IConnector extends Document {
   id:          string;
   name:        string;
   type:        string;
