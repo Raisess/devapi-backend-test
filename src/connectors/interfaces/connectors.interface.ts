@@ -2,6 +2,8 @@ import { Document } from "mongoose";
 
 export interface IConnector extends Document {
   id:          string;
+  createdAt:   string;
+  updatedAt:   string;
   name:        string;
   type:        string;
   privacy:     string;
