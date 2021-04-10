@@ -1,4 +1,4 @@
-import { Controller, Post, Body, Get, Param, Delete, Put } from "@nestjs/common";
+import { Controller, Post, Body, Get, Param, Query, Delete, Put, HttpStatus, HttpException } from "@nestjs/common";
 
 import { IConnector } from "./interfaces/connectors.interface";
 import { ConnectorsService } from "./connectors.service";
@@ -9,16 +9,20 @@ export class ConnectorsController {
 
   @Post()
   public async create(@Body() connector: IConnector): Promise<string> {
-    await this.connectorsService.create(connector);
+    try {
+      await this.connectorsService.create(connector);
 
-    return JSON.stringify({
-      log: "created new connector"
-    });
+      return JSON.stringify({
+        log: "created new connector"
+      });
+    } catch(err) {
+      throw new HttpException(err.message, HttpStatus.NOT_ACCEPTABLE);
+    }
   }
 
   @Get()
-  public async findAll(): Promise<Array<IConnector>> {
-    return await this.connectorsService.findAll();
+  public async findAll(@Query("filter") filter?: string, @Query("search") search?: string): Promise<Array<IConnector>> {
+    return await this.connectorsService.findAll([filter, search]);
   }
 
   @Get(":id")
