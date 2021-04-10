@@ -1,4 +1,15 @@
-import { Controller, Post, Body, Get, Param, Query, Delete, Put, HttpStatus, HttpException } from "@nestjs/common";
+import {
+  Controller,
+  Post,
+  Body,
+  Get,
+  Param,
+  Query,
+  Delete,
+  Put,
+  HttpStatus,
+  HttpException,
+} from "@nestjs/common";
 
 import { IConnector } from "./interfaces/connectors.interface";
 import { ConnectorsService } from "./connectors.service";
@@ -13,15 +24,18 @@ export class ConnectorsController {
       await this.connectorsService.create(connector);
 
       return JSON.stringify({
-        log: "created new connector"
+        log: "created new connector",
       });
-    } catch(err) {
+    } catch (err) {
       throw new HttpException(err.message, HttpStatus.NOT_ACCEPTABLE);
     }
   }
 
   @Get()
-  public async findAll(@Query("filter") filter?: string, @Query("search") search?: string): Promise<Array<IConnector>> {
+  public async findAll(
+    @Query("filter") filter?: string,
+    @Query("search") search?: string,
+  ): Promise<Array<IConnector>> {
     return await this.connectorsService.findAll([filter, search]);
   }
 
@@ -31,11 +45,14 @@ export class ConnectorsController {
   }
 
   @Put(":id")
-  public async update(@Param() { id }: { id: string }, @Body() connector: IConnector): Promise<string> {
+  public async update(
+    @Param() { id }: { id: string },
+    @Body() connector: IConnector,
+  ): Promise<string> {
     await this.connectorsService.update(id, connector);
 
     return JSON.stringify({
-      log: "updated connector"
+      log: "updated connector",
     });
   }
 
@@ -44,8 +61,7 @@ export class ConnectorsController {
     await this.connectorsService.remove(id);
 
     return JSON.stringify({
-      log: "deleted connector"
+      log: "deleted connector",
     });
   }
 }
-
