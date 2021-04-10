@@ -14,7 +14,7 @@ export class AuthMiddleware implements NestMiddleware {
       }
     }
 
-    return res.json({
+    return res.status(401).json({
       log: "Invalid authorization token"
     });
   }
