@@ -15,7 +15,7 @@ class App {
     const config: any = new DocumentBuilder()
       .setTitle("DEVAPI: Connectors API")
       .setDescription(
-        "API feita para teste de vaga de desenvolvedor backend Typescript/NestJS na devapi.",
+        "API feita para teste de vaga de desenvolvedor backend na devapi.",
       )
       .setVersion("1.0")
       .build();
