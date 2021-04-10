@@ -12,10 +12,20 @@ export class ConnectorsService {
 		await new Connector(connector).save();
 	}
 
-	public async findAll(): Promise<Array<IConnector>> {
+	public async findAll(search?: [string, string]): Promise<Array<IConnector>> {
 		const connectors: Array<IConnector> = await Connector.find();
 
-		return connectors;
+		if (search) {
+			let filteredConnectors: Array<IConnector> = [];
+
+			for (const connector of connectors) {
+				if (connector[search[0]] === search[1]) filteredConnectors.push(connector);
+			}
+
+			return filteredConnectors;
+		} else {
+			return connectors;
+		}
 	}
 
 	public async findOne(id: string): Promise<IConnector> {
@@ -32,8 +42,15 @@ export class ConnectorsService {
 		const connector: IConnector = await this.findOne(id);
 
 		await connector.updateOne({
-			updatedAt: new Date().toLocaleString(),
-			name:      newData.name || connector.name
+			updatedAt:   new Date().toLocaleString(),
+			name:        newData.name        || connector.name,
+			type:        newData.type        || connector.type,
+			privacy:     newData.privacy     || connector.privacy,
+			category:    newData.category    || connector.category,
+			description: newData.description || connector.description,
+			status:      newData.status      || connector.status,
+			baseUrl:     newData.baseUrl     || connector.baseUrl,
+			logoUrl:     newData.logoUrl     || connector.logoUrl
 		});
 	}
 
