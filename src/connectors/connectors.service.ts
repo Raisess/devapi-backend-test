@@ -16,14 +16,7 @@ export class ConnectorsService {
     const connectors: Array<IConnector> = await Connector.find();
 
     if (search) {
-      let filteredConnectors: Array<IConnector> = [];
-
-      for (const connector of connectors) {
-        if (connector[search[0]] === search[1])
-          filteredConnectors.push(connector);
-      }
-
-      return filteredConnectors;
+      return connectors.filter((connector: IConnector): boolean => connector[search[0]] === search[1]);
     } else {
       return connectors;
     }
