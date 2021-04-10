@@ -13,6 +13,8 @@ describe("JWT test suite", (): void => {
 	});
 
 	test("check jwt", (): void => {
+		console.log(token);
+
 		expect(jwt.verify(token)).toBe(true);
 	});
 });
