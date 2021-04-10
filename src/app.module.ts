@@ -1,11 +1,9 @@
 import { Module } from "@nestjs/common";
 
-import { ConnectorsController } from "./connectors/connectors.controller";
-import { ConnectorsService } from './connectors/connectors.service';
+import { ConnectorsModule } from "./connectors/connectors.module";
 
 @Module({
-	controllers: [ConnectorsController],
-	providers:   [ConnectorsService]
+	imports: [ConnectorsModule]
 })
-export default class AppModule {}
+export class AppModule {}
 

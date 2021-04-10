@@ -3,7 +3,7 @@ import "./database/connect";
 
 import { NestFactory, NestApplication } from "@nestjs/core";
 
-import AppModule from "./app.module";
+import { AppModule } from "./app.module";
 
 const port: number | string = process.env.PORT || 1939;
 
