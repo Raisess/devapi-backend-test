@@ -12,7 +12,10 @@ class App {
   public static async bootstrap(): Promise<void> {
     const app: NestApplication = await NestFactory.create(AppModule);
 
-    const config: any = new DocumentBuilder().setTitle("DEVAPI: Connectors API").setDescription("API feita para teste de vaga de desenvolvedor backend Typescript/NestJS na devapi.",
+    const config: any = new DocumentBuilder()
+      .setTitle("DEVAPI: Connectors API")
+      .setDescription(
+        "API feita para teste de vaga de desenvolvedor backend Typescript/NestJS na devapi.",
       )
       .setVersion("1.0")
       .build();
