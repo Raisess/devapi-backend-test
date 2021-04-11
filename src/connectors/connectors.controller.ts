@@ -13,6 +13,7 @@ import {
 import { ApiBearerAuth } from "@nestjs/swagger";
 
 import { IConnector } from "./interfaces/connectors.interface";
+import { CreateConnectorDto } from "./dto/create-connector.dto";
 import { ConnectorsService } from "./connectors.service";
 
 @ApiBearerAuth()
@@ -21,7 +22,7 @@ export class ConnectorsController {
   constructor(private connectorsService: ConnectorsService) {}
 
   @Post()
-  public async create(@Body() connector: IConnector): Promise<string> {
+  public async create(@Body() connector: CreateConnectorDto): Promise<string> {
     try {
       await this.connectorsService.create(connector);
 

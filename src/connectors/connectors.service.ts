@@ -2,13 +2,14 @@ import { Injectable } from "@nestjs/common";
 import { model, Model } from "mongoose";
 
 import { IConnector } from "./interfaces/connectors.interface";
+import { CreateConnectorDto } from "./dto/create-connector.dto";
 import { connectorsSchema } from "./schemas/connectors.schema";
 
 const Connector: Model<IConnector> = model("Connector", connectorsSchema);
 
 @Injectable()
 export class ConnectorsService {
-  public async create(connector: IConnector): Promise<void> {
+  public async create(connector: CreateConnectorDto): Promise<void> {
     await new Connector(connector).save();
   }
 
