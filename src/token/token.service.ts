@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 
-import JWT from "../../shared/JWT";
+import JWT from "../shared/JWT";
 
 const jwt: JWT = new JWT();
 

@@ -2,7 +2,7 @@ import { Module, NestModule, MiddlewareConsumer } from "@nestjs/common";
 
 import { AuthMiddleware } from "./common/middlewares/auth.middleware";
 import { ConnectorsModule } from "./connectors/connectors.module";
-import { TokenModule } from "./token/token/token.module";
+import { TokenModule } from "./token/token.module";
 
 @Module({
   imports: [ConnectorsModule, TokenModule],
