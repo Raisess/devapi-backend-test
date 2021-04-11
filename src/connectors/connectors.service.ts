@@ -16,7 +16,7 @@ export class ConnectorsService {
   public async findAll(search?: [string, string]): Promise<Array<IConnector>> {
     const connectors: Array<IConnector> = await Connector.find();
 
-    if (search) {
+    if (search && !search.includes(" ")) {
       return connectors.filter(
         (connector: IConnector): boolean => connector[search[0]] === search[1],
       );
