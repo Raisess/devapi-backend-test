@@ -34,5 +34,5 @@ Aguarde a instalação das dependencias e, execute o comando:
 npm run start
 ```
 
-A API estará rodando em [](http://localhost:1939) e o swagger estará rodando em [](http://localhost:1939/api)
+A API estará rodando em http://localhost:1939 e o swagger estará rodando em http://localhost:1939/api
 
