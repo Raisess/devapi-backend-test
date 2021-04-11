@@ -10,7 +10,7 @@ import {
   HttpStatus,
   HttpException,
 } from "@nestjs/common";
-import { ApiBearerAuth } from "@nestjs/swagger";
+import { ApiBearerAuth, ApiQuery, ApiParam } from "@nestjs/swagger";
 
 import { IConnector } from "./interfaces/connectors.interface";
 import { CreateConnectorDto } from "./dto/create-connector.dto";
@@ -35,6 +35,8 @@ export class ConnectorsController {
   }
 
   @Get()
+  @ApiQuery({ name: "filter", required: false })
+  @ApiQuery({ name: "search", required: false })
   public async findAll(
     @Query("filter") filter?: string,
     @Query("search") search?: string,
@@ -43,11 +45,13 @@ export class ConnectorsController {
   }
 
   @Get(":id")
+  @ApiParam({ name: "id" })
   public async findOne(@Param() { id }: { id: string }): Promise<IConnector> {
     return await this.connectorsService.findOne(id);
   }
 
   @Put(":id")
+  @ApiParam({ name: "id" })
   public async update(
     @Param() { id }: { id: string },
     @Body() connector: IConnector,
@@ -60,6 +64,7 @@ export class ConnectorsController {
   }
 
   @Delete(":id")
+  @ApiParam({ name: "id" })
   public async remove(@Param() { id }: { id: string }): Promise<string> {
     await this.connectorsService.remove(id);
 
