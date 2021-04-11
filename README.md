@@ -1,4 +1,4 @@
-#DEVAPI: Connectors API
+# DEVAPI: Connectors API
 
 > API feita para teste de vaga de desenvolvedor backend na devapi.
 
@@ -6,7 +6,7 @@
 
 Tenha certeza de ter o [nestjs-cli](https://docs.nestjs.com/cli/overview#installation), [typescript](http://typescriptlang.org/) e o [mongodb-server](https://www.mongodb.com/try/download/community) instalados.
 
-### Inicie o mongodb
+#### Inicie o mongodb
 
 Para usar está api o mongodb deve estar rodando antes de tudo.
 
@@ -20,6 +20,8 @@ Para ter certeza de que está rodando, execute o comando:
 mongo
 ```
 
+#### Iniciando a API
+
 Rode o comando:
 
 ```shell
@@ -32,5 +34,5 @@ Aguarde a instalação das dependencias e, execute o comando:
 npm run start
 ```
 
-A api estará rodando em [](http://localhost:1939) e o swagger estará rodando em [](http://localhost:1939/api)
+A API estará rodando em [](http://localhost:1939) e o swagger estará rodando em [](http://localhost:1939/api)
 
