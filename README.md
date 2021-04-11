@@ -22,6 +22,26 @@ Para ter certeza de que está rodando, execute o comando:
 mongo
 ```
 
+#### Configurando ENV vars
+
+Execute o comando:
+
+```shell
+cp .env.example .env
+```
+
+E escreva as variaveis de acordo com o exemplo abaixo:
+
+> Use uma url de um banco de dados que você tenha ou crie um novo chamado devapi-backend-test
+
+```shell
+MONGODB_URL=mongodb://localhost/devapi-backend-test
+TOKEN_PK=lxgiwyl
+```
+
+A variavel `MONGODB_URL` é referente a url que será utilizada para a conexão com o banco de dados.
+A variavel `TOKEN_PK` é referente a chave privada usada pelo JWT.
+
 #### Iniciando a API
 
 Rode o comando:
