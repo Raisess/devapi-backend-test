@@ -18,6 +18,7 @@ class App {
         "API feita para teste de vaga de desenvolvedor backend na devapi.",
       )
       .setVersion("1.0")
+      .addBearerAuth()
       .build();
 
     const document: OpenAPIObject = SwaggerModule.createDocument(app, config);

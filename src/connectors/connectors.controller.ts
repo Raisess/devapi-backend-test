@@ -10,10 +10,12 @@ import {
   HttpStatus,
   HttpException,
 } from "@nestjs/common";
+import { ApiBearerAuth } from "@nestjs/swagger";
 
 import { IConnector } from "./interfaces/connectors.interface";
 import { ConnectorsService } from "./connectors.service";
 
+@ApiBearerAuth()
 @Controller("connectors")
 export class ConnectorsController {
   constructor(private connectorsService: ConnectorsService) {}
