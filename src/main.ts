@@ -25,6 +25,7 @@ class App {
     SwaggerModule.setup("api", app, document);
 
     await app.listen(port, (): void => console.log("running on port:", port));
+    console.log(`swagger is running on: http://localhost:${port}`);
   }
 }
 
