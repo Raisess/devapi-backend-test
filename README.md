@@ -72,13 +72,13 @@ Body:
 ```json
 {
   "name": "name",
-	"status": "status",
-	"description": "description",
-	"category": "category",
-	"type": "SOLID",
-	"baseUrl": "baseUrl",
-	"logoUrl": "logoUrl",
-	"privacy": "PRIVATE"
+  "status": "status",
+  "description": "description",
+  "category": "category",
+  "type": "SOLID",
+  "baseUrl": "baseUrl",
+  "logoUrl": "logoUrl",
+  "privacy": "PRIVATE"
 }
 ```
 
@@ -114,13 +114,13 @@ Body:
 ```json
 {
   "name": "name",
-	"status": "status",
-	"description": "description",
-	"category": "category",
-	"type": "SOLID",
-	"baseUrl": "baseUrl",
-	"logoUrl": "logoUrl",
-	"privacy": "PRIVATE"
+  "status": "status",
+  "description": "description",
+  "category": "category",
+  "type": "SOLID",
+  "baseUrl": "baseUrl",
+  "logoUrl": "logoUrl",
+  "privacy": "PRIVATE"
 }
 ```
 
