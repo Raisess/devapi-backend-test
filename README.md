@@ -10,7 +10,7 @@ Tenha certeza de ter o [nestjs-cli](https://docs.nestjs.com/cli/overview#install
 
 > Os comandos do mongodb são para linux (não tenho certeza se são os mesmos no windows ;-;).
 
-Para usar está api o mongodb deve estar rodando antes de tudo.
+Para usar esta api o mongodb deve estar rodando antes de tudo.
 
 ```shell
 mongod
@@ -50,7 +50,7 @@ Rode o comando:
 npm install
 ```
 
-Aguarde a instalação das dependencias e, execute o comando:
+Aguarde a instalação das dependências e, execute o comando:
 
 ```shell
 npm run start
@@ -155,7 +155,7 @@ Endpoint:
 DELETE: /connectors/:id
 ```
 
-Informe o id remove o conector do banco de dados permanentemente.
+Informe o id e remova o conector do banco de dados permanentemente.
 
 ## Nota
 
