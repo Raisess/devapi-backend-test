@@ -8,7 +8,7 @@ Tenha certeza de ter o [nestjs-cli](https://docs.nestjs.com/cli/overview#install
 
 #### Inicie o mongodb
 
-> Os comandos do mongodb são para linux (não tenho certeza se são os mesmos no windos ;-;).
+> Os comandos do mongodb são para linux (não tenho certeza se são os mesmos no windows ;-;).
 
 Para usar está api o mongodb deve estar rodando antes de tudo.
 
