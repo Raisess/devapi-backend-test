@@ -88,7 +88,7 @@ Cria um novo conector no banco de dados.
 
 Endpoint:
 ```shell
-GET: /connectors?filter=type&SOLID
+GET: /connectors?filter=type&search=SOLID
 ```
 
 Obs: Os parametros são opcionais, nesse caso acima, seriam retornados somente os conectores do tipo solid.
