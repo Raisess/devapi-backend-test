@@ -44,3 +44,11 @@ Para popular o banco de dados com dados ficticios, execute o comando após a ini
 npm run populate-db
 ```
 
+## Nota
+
+> Pequena nota sobre o desenvolvimento
+
+Eu nunca tinha usado NestJS antes, fiquei muito animado em aprender para aplicar neste projeto.
+Não me pareceu dificil, e eu fiquei completamente apaixonado pelo framework, ainda não entendi muito bem as boas práticas do mesmo, 
+mas acredito que posso melhorar com o tempo e uso.
+
