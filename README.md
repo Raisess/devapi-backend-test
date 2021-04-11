@@ -36,3 +36,11 @@ npm run start
 
 A API estará rodando em http://localhost:1939 e o swagger estará rodando em http://localhost:1939/api
 
+#### Popular o banco de dados
+
+Para popular o banco de dados com dados ficticios, execute o comando após a inicialização da API:
+
+```shell
+npm run populate-db
+```
+

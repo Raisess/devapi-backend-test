@@ -1,0 +1,202 @@
+[
+  {
+    "type": "BD",
+    "name": "Connie",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOAP",
+    "name": "Yolanda",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Good",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOAP",
+    "name": "Moody",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Lambert",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "BD",
+    "name": "Adele",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Raymond",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "BD",
+    "name": "Oneill",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "BD",
+    "name": "West",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "BD",
+    "name": "Juanita",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "online",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Hart",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "online",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Janet",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Lenore",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOAP",
+    "name": "Osborn",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Murray",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "BD",
+    "name": "Schroeder",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "online",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Kari",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "offline",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Combs",
+    "category": "API",
+    "privacy": "PRIVATE",
+    "status": "online",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOAP",
+    "name": "Kelley",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "online",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  },
+  {
+    "type": "SOLID",
+    "name": "Arline",
+    "category": "API",
+    "privacy": "PUBLIC",
+    "status": "online",
+    "baseUrl": "test",
+    "logoUrl": "test",
+    "description": "oh no"
+  }
+]
