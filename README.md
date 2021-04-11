@@ -44,6 +44,97 @@ Para popular o banco de dados com dados ficticios, execute o comando após a ini
 npm run populate-db
 ```
 
+## Rotas
+
+### Token
+
+#### Criar novo token
+
+Endpoint:
+```shell
+POST: /token
+```
+
+Cria um bearer token válido por 7 horas, para utilização da API.
+
+### Connectors
+
+> Todas as rotas de conectores precisam de um token de autorização bearer no header da requisição
+
+#### Criar novo conector
+
+Endpoint:
+```shell
+POST: /connectors
+```
+
+Body:
+```json
+{
+  "name": "name",
+	"status": "status",
+	"description": "description",
+	"category": "category",
+	"type": "SOLID",
+	"baseUrl": "baseUrl",
+	"logoUrl": "logoUrl",
+	"privacy": "PRIVATE"
+}
+```
+
+Cria um novo conector no banco de dados.
+
+#### Buscar todos os conectores
+
+Endpoint:
+```shell
+GET: /connectors?filter=type&SOLID
+```
+
+Obs: Os parametros são opcionais, nesse caso acima, seriam retornados somente os conectores do tipo solid.
+Omitilos resulta em buscar todos os conectores.
+
+#### Buscar apenas um conector
+
+Endpoint:
+```shell
+GET: /connectors/:id
+```
+
+Informe o id (uuid, não o "_id") do conector para buscar somente por ele.
+
+#### Editar um conector
+
+Endpoint:
+```shell
+PUT: /connectors/:id
+```
+
+Body:
+```json
+{
+  "name": "name",
+	"status": "status",
+	"description": "description",
+	"category": "category",
+	"type": "SOLID",
+	"baseUrl": "baseUrl",
+	"logoUrl": "logoUrl",
+	"privacy": "PRIVATE"
+}
+```
+
+Para facilitar, os dados que não precisam ser editados podem ser omitidos.
+
+#### Remover um conector
+
+Endpoint:
+```shell
+DELETE: /connectors/:id
+```
+
+Informe o id remove o conector do banco de dados permanentemente.
+
 ## Nota
 
 > Pequena nota sobre o desenvolvimento
