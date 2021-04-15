@@ -77,6 +77,13 @@ Endpoint:
 POST: /token
 ```
 
+Body:
+```json
+{
+  "payload": "payload"
+}
+```
+
 Cria um bearer token válido por 7 horas, para utilização da API.
 
 ### Connectors
