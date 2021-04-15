@@ -54,7 +54,7 @@ export class ConnectorsController {
   @ApiParam({ name: "id" })
   public async update(
     @Param() { id }: { id: string },
-    @Body() connector: IConnector,
+    @Body() connector: CreateConnectorDto,
   ): Promise<string> {
     await this.connectorsService.update(id, connector);
 

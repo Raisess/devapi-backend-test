@@ -4,4 +4,3 @@ export class CreateTokenDTO {
   @ApiProperty()
   public payload: unknown;
 }
-
